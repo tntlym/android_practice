@@ -1,0 +1,60 @@
+package com.doradori.memorypower;
+
+import java.util.ArrayList;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Context;
+import android.view.Menu;
+import android.view.View;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    
+    class Shape {
+    	final static int RECT = 0;
+    	final static int CIRCLE = 1;
+    	final static int TRIANGLE = 2;
+    	
+    	int what;
+    	int color;
+    	int rt;
+    }
+    
+    class GameView extends View {
+
+    	final static int BLANK = 0;
+    	final static int PLAY = 1;
+    	
+    	final static int DELAY = 1500;
+    	
+    	int status;
+    	
+    	ArrayList<Shape> arShape = new ArrayList<Shape>();
+    	Random Rnd = new Random();
+    	
+    	
+		public GameView(Context context) {
+			super(context);
+			// TODO Auto-generated constructor stub
+		}
+		
+		
+    	
+    }
+    
+}
