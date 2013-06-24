@@ -19,6 +19,7 @@ bin/
 gen/
 classes/
 gen-external-apklibs/
+.metadata/
  
 # maven output folder
 target
